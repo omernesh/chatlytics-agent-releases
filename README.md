@@ -26,8 +26,7 @@ sudo ./agent-linux-amd64 setup
 ```bash
 curl -fLO https://github.com/omernesh/chatlytics-agent-releases/releases/latest/download/chatlytics-agent-amd64.deb
 sudo apt install ./chatlytics-agent-amd64.deb
-sudo chatlytics-agent login --browser      # approve from any device
-sudo systemctl enable --now chatlytics-agent
+sudo chatlytics-agent login --browser      # approve from any device — also enables & starts the service
 ```
 *(ARM: `chatlytics-agent-arm64.deb`.)*
 
@@ -35,8 +34,7 @@ sudo systemctl enable --now chatlytics-agent
 ```bash
 curl -fLO https://github.com/omernesh/chatlytics-agent-releases/releases/latest/download/chatlytics-agent-x86_64.rpm
 sudo dnf install ./chatlytics-agent-x86_64.rpm
-sudo chatlytics-agent login --browser
-sudo systemctl enable --now chatlytics-agent
+sudo chatlytics-agent login --browser      # approve from any device — also enables & starts the service
 ```
 *(ARM: `chatlytics-agent-aarch64.rpm`.)*
 
